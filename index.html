@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="img/favicon-32x32.png">
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.display = "block";
+            document.getElementById("shadow").style.display = "block";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.display = "none";
+            document.getElementById("shadow").style.display = "none";
+        }
+    </script>
+    <title>News Homepage</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo.svg" alt="logo">
+        </div>
+        <nav class="desktop">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Popular</a></li>
+                <li><a href="#">Trending</a></li>
+                <li><a href="#">Categories</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="mobile">
+            <img src="img/icon-menu.svg" alt="menu" onclick="openNav()">
+        </a>
+    </header>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="img/icon-menu-close.svg" alt=""></a>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">New</a></li>
+            <li><a href="#">Popular</a></li>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">Categories</a></li>
+        </ul>
+    </div>
+    <div id="shadow" class="shadow"></div>
+    <main>
+        <div class="latest col-8">
+            <div class="col-12">
+                <img src="img/image-web-3-desktop.jpg" alt="" class="desktop col-12">
+                <img src="img/image-web-3-mobile.jpg" alt="" class="mobile col-12">
+            </div>
+            <div class="latest-text">
+                <div class="col-6">
+                    <h1>The Bright Future of Web 3.0?</h1>
+                </div>
+                <div class="col-6">
+                    <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+                        But is it really fulfilling its promise?</p>
+                    <a href="#">READ MORE</a>
+                </div>
+            </div>
+        </div>
+        <div class="new col-4">
+            <h1>New</h1>
+            <h2><a href="#">Hydrogen VS Electric Cars</a></h2>
+            <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+            <hr>
+            <h2><a href="#">The Downsides of AI Artistry</a></h2>
+            <p>What are the possible adverse effects of on-demand AI image generation?</p>
+            <hr>
+            <h2><a href='#'>Is VC Funding Drying Up?</a></h2>
+            <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.</p>
+        </div>
+        <div class="trending col-12">
+            <div class="article col-4">
+                <div>
+                    <img src="img/image-retro-pcs.jpg" alt="retro-pc">
+                </div>
+                <div class="trending-text">
+                    <h1>01</h1>
+                    <h4><a href="#">Reviving Retro PCs</a></h4>
+                    <p>What happens when old PCs are given modern upgrades?</p>
+                </div>
+            </div>
+            <div class="article col-4">
+                <div>
+                    <img src="img/image-top-laptops.jpg" alt="laptop">
+                </div>
+                <div class="trending-text">
+                    <h1>02</h1>
+                    <h4><a href="#">Top 10 Laptops of 2022</a></h4>
+                    <p>Our best picks for various needs and budgets.</p>
+                </div>
+            </div>
+            <div class="article col-4">
+                <div>
+                    <img src="img/image-gaming-growth.jpg" alt="gaming">
+                </div>
+                <div class="trending-text">
+                    <h1>03</h1>
+                    <h4><a href="#">The Growth of Gaming</a></h4>
+                    <p>How the pandemic has sparked fresh opportunities.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        Challenge by <a href="https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl" class="footer-link">Frontend Mentor</a>.
+        Coded by <a href="https://github.com/yahtzeee" class="footer-link">Hakan AYHAN</a>
+    </footer>
+</body>
+</html>
